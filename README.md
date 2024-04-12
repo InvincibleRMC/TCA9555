@@ -2,6 +2,13 @@
 
 ***
 
+## Note
+
+This a fork of https://github.com/leloup314/TCA9555. It has been altered to work on Python3.10.
+
+
+***
+
 ## Introduction
 
 **TCA9555** is a Python module for interfacing the Texas Instruments [TCA9555](https://www.ti.com/lit/ds/symlink/tca9555.pdf) 16-bit I2C-based GPIO expander using a Raspberry Pi.
