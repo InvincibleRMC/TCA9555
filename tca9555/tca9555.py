@@ -357,7 +357,9 @@ class TCA9555(object):
         reg: str
             Name of register whose state will be read
         """
-        return sum([self._get_port_state(reg=reg, port=port) for port in range(self._n_ports)])
+        ls = [self._get_port_state(reg=reg, port=port) for port in range(self._n_ports)]
+        
+        return ls[0] + ls[1]
 
     def _get_port_state(self, reg, port):
         """
